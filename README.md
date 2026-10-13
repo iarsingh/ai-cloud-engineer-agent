@@ -1,5 +1,12 @@
 # AI Cloud Engineer Agent
 
+## Overview
+
+A cloud engineering agent that turns a request into a Terraform plan but never applies it. `POST /agent/run` returns the planned resource list, and any request to apply is refused. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records for agent jobs.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop proof with tests; it only plans, calls no hosted model and refuses apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
